@@ -10,7 +10,7 @@ foreach ($obj->articles as $objects)
 			$n1=strlen($objects->title);
 			for ($x = 0; $x <= $n1; $x++)
 			{
-				if(strcmp(substr($objects->title,$x,$n),$str)==0)
+				if(strcmp(strtolower(substr($objects->title,$x,$n)),$str)==0)
 					{echo $objects->title;
 						echo "<br><br>";
 					}
