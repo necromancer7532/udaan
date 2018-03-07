@@ -12,7 +12,7 @@ foreach ($obj->articles as $objects)
 			{
 				if(strcmp(substr($objects->title,$x,$n),$str)==0)
 					{echo $objects->title;
-						echo "\n";
+						echo "<br><br>";
 					}
 			}
 		}
